@@ -1,0 +1,141 @@
+\ifx\pdfoutput\undefined
+\documentclass[a4paper]{book}
+\else
+\documentclass[pdftex,a4paper]{book}
+\usepackage{thumbpdf}
+\usepackage[pdftex,bookmarks,colorlinks=true]{hyperref}
+
+\def\pdfBorderAttrs{/Border [0 0 0] }
+\fi
+% ---------------------------------------------------------------------------------------------
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[draft]{pdfdraftcopy}
+
+% ---------------------------------------------------------------------------------------------
+\begin{document}
+% ---------------------------------------------------------------------------------------------
+
+\title
+    {
+    \begin{Huge}The \textit{Freemason} Build System \\ \vspace{.5 cm} Version 4.x \end{Huge}
+    \\ \vspace{1 cm}
+    \center{ \includegraphics[width=7cm]{../graphics/freemason-logo.jpg}}
+    \\ \vspace{2 cm}
+    \begin{normalsize}Document version 1.0\end{normalsize}
+    }
+\date{\today}
+
+\pdfbookmark{Title}{title}%
+\draftstring{}%
+\watermarkgraphic{../../../../../users/rafie/doc/templates/rv-frontpage-a4.pdf}%
+\watermark%
+\maketitle%
+
+\watermarkgraphic{}%
+\watermark%
+\draftstring{Draft}%
+\draftfontsize{150}%
+
+% ---------------------------------------------------------------------------------------------
+
+\pdfbookmark{Table of Contents}
+{tableofcontents}%
+\tableofcontents%
+
+% ---------------------------------------------------------------------------------------------
+
+\chapter{Introduction}
+
+\section{Rationale}
+\section{Concepts}
+\section{A Brief Demonstration}
+
+% ---------------------------------------------------------------------------------------------
+
+\chapter{Products}
+
+\section{Product Types}
+
+% ---------------------------------------------------------------------------------------------
+
+\chapter{Targets}
+
+\section{Target Architectures}
+\subsection{Supported Architectures}
+\subsection{Adding a Target Architecture}
+
+\section{Target Platform}
+\subsection{Supported Platforms}
+\subsection{Adding a Target Platform}
+
+\section{Target OS}
+\subsection{Supported OSes}
+\subsection{Adding a Target OS}
+
+% ---------------------------------------------------------------------------------------------
+
+\chapter{Builders}
+
+\section{Builder Hosts}
+\section{Builder Platforms}
+\section{Configuration of a Builder Host}
+\section{The Repository}
+
+% ---------------------------------------------------------------------------------------------
+
+\chapter{Tools}
+
+\section{General}
+\section{Tool Parametrization}
+\section{Supported C/C++ Compilers}
+\section{CC Tool}
+\section{Other Supported Tools}
+\section{Adding Tools}
+
+% ---------------------------------------------------------------------------------------------
+
+\chapter{Modules}
+
+\section{Definition}
+\section{Module Types}
+\section{Module Types}
+\section{Source Files}
+\section{Writing Module Definitions Files}
+\section{Module Definition Templates}
+
+% ---------------------------------------------------------------------------------------------
+
+\chapter{Dependencies}
+
+\section{Source file dependencies}
+\section{Module dependencies}
+\section{Writing Module-Dependency Files}
+
+% ---------------------------------------------------------------------------------------------
+
+\chapter{Installation}
+
+\section{Requisites}
+\section{The Repository}
+\section{Host Definitions}
+
+% ---------------------------------------------------------------------------------------------
+
+\chapter{Advanced Topics}
+
+\section{Automatically Generated Source Files}
+\section{Distributed Build}
+
+% ---------------------------------------------------------------------------------------------
+
+\chapter{Reference}
+
+\section{Variables}
+\section{Useful MAKE options}
+
+% ----------------------------------------------------------------
+\end{document}
+% ----------------------------------------------------------------
